@@ -7,6 +7,7 @@
     <title>Calculatrice</title>
     <link href="../styles/commun.css" rel="stylesheet"/>
     <link href="../styles/calculatrice.css" rel="stylesheet"/>
+    <script src="../scripts/calculatrice.js" async></script>
 </head>
 <body>
     <div id="menu">
@@ -16,5 +17,34 @@
 
         <a href="./images.html" class="button">Images</a>
     </div>
+    <div class="flex-nombres">
+        <button value="1" onclick="ajouterChiffre(this.value)" class="button-nombres">1</button>
+        <button value="2" onclick="ajouterChiffre(this.value)" class="button-nombres">2</button>
+        <button value="3" onclick="ajouterChiffre(this.value)" class="button-nombres">3</button>
+        <button value="4" onclick="ajouterChiffre(this.value)" class="button-nombres">4</button>
+        <button value="5" onclick="ajouterChiffre(this.value)" class="button-nombres">5</button>
+        <button value="6" onclick="ajouterChiffre(this.value)" class="button-nombres">6</button>
+        <button value="7" onclick="ajouterChiffre(this.value)" class="button-nombres">7</button>
+        <button value="8" onclick="ajouterChiffre(this.value)" class="button-nombres">8</button>
+        <button value="9" onclick="ajouterChiffre(this.value)" class="button-nombres">9</button>
+        <button value="0" onclick="ajouterChiffre(this.value)" class="button-nombres">0</button>
+    </div>
+    <div class="flex-operateurs">
+        <button value="+" onclick="ajouterOperateur(this.value)" class="button-operateurs">+</button>
+        <button value="-" onclick="ajouterOperateur(this.value)" class="button-operateurs">-</button>
+        <button value="/" onclick="ajouterOperateur(this.value)" class="button-operateurs">/</button>
+        <button value="x" onclick="ajouterOperateur(this.value)" class="button-operateurs">x</button>
+    </div>
+    <div>
+        <input type="text" id="calcul" name="calcul">
+    </div>
+    <div>
+        <button onclick="calculer(calcul.value)" type="submit" class="button-operateurs" id="egale" name="egale">=</button>
+    </div>
+    <div id="reponse">
+        <label for="resultat">Résultat : </label>
+        <input type="text" id="resultat" name="resultat" readonly>
+    </div>
+    
 </body>
 </html>
