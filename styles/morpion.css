@@ -16,7 +16,8 @@
 .cellule > span{
     display: block;
     text-align: center;
-    content:"X";
+    margin-top: 20%;
+    font-size: 100px;
 }
 
 aside{
@@ -25,4 +26,17 @@ aside{
     border: 1px solid gray;
     border-radius: 10px;
     display: inline-block;
+}
+
+#currentJoueur{
+    color: red;
+}
+
+#winner{
+    color: gold;
+    font-weight: bold;
+}
+
+#loser{
+    color: gray;
 }
