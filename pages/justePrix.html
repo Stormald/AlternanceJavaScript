@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link href="../styles/commun.css" rel="stylesheet" />
+    <link href="../styles/justePrix.css" rel="stylesheet" />
+    <script src="../scripts/justePrix.js" async></script>
+</head>
+
+<body>
+    <div id="menu">
+        <a href='../index.html' class="button">Accueil</a>
+
+        <a href="./calculatrice.html" class="button">Calculatrice</a>
+
+        <a href="./images.html" class="button">Images</a>
+
+        <a href="./justePrix.html" class="button" id="current">Juste Prix</a>
+    </div>
+    <div class="flex-prix">
+        <div>
+            <label for="tentative">Nombre tenté : </label>
+            <input type="number" id="tentative" name="tentative">
+            <button onclick="testerTentative(tentative.value)" type="submit" class="button-operateurs" id="egale"
+                name="egale">Valider</button>
+        </div>
+        <div>
+            <label for="tentative">Indication : </label>
+            <label id="indication" name="indication"></label>
+        </div>
+    </div>
+</body>
+
+</html>

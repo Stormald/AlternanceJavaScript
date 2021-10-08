@@ -1,0 +1,15 @@
+.flex-prix{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 500px;
+    margin: 50px;
+}
+
+.flex-prix > div{
+    margin: 20px;
+}
+
+#indication{
+    width: fit-content;
+}
