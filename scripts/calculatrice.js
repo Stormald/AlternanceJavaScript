@@ -13,7 +13,13 @@ let ajouterOperateur = (ope) =>{
 let calculer = (calcul) =>{
     let nombresArray = [];
     let resultat = document.querySelector("#resultat");
-    if(calcul.includes("+")){
+
+    //EVAL
+    let calculReplaced = calcul.replace("x", "*");
+    resultat.value = eval(calculReplaced);
+    //EVAL
+    
+    /*if(calcul.includes("+")){
         nombresArray = calcul.split("+");
         resultat.value = +nombresArray[0] + +nombresArray[1];
     } else if(calcul.includes("-")){
@@ -28,5 +34,5 @@ let calculer = (calcul) =>{
     }
     else{
         resultat.value ="Opérateur incorrect";
-    }
+    }*/
 }
