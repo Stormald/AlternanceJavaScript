@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    font-family: Verdana;
+}
+
+#menu{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #86dd89;
+    font-family: Verdana;
+}
+
+#menu a{
+    align-self: center;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#current {
+    background-color: #227c25;
+}

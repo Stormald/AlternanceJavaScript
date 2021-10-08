@@ -1,0 +1,10 @@
+.flex-images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between; 
+}
+
+img{
+    width: 40%;
+    margin: 15px;
+}
