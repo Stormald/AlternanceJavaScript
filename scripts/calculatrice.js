@@ -1,13 +1,13 @@
 let ajouterChiffre = (num) =>{
     let calcul = document.querySelector("#calcul");
     calcul.value+=num;
-    console.log(num);
+    //console.log(num);
 }
 
 let ajouterOperateur = (ope) =>{
     let calcul = document.querySelector("#calcul");
     calcul.value+=ope;
-    console.log(ope);
+    //console.log(ope);
 }
 
 let calculer = (calcul) =>{
